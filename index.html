@@ -3,15 +3,51 @@
     <head>
         <title>Bulb Toggle Application </title>
         <style>
+            h1,p{
+                text-align: center;
+            }
+            .app_container{
+              
+                flex-direction: row;
+                margin: 0px auto;
+                border: 1px solid burlywood;
+                border-radius: 3px;
+                width:573px;
+                height:400px;
+                
+                
+            }
+            .bulb_style{
+                height: 300px;
+                align-items: center;
+                align-content: center;
+                margin: 0px auto;
+                
+             }
+             .toggle_btn{
+                  margin: 30px auto;
+                  margin-left: 40%;
+                  padding: 10px 30px;
+                  color:black;
+                  background-color: rgb(255, 115, 0);
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+             }
+             .toggle_btn:hover{
+                box-shadow: 0 0  2px 2px rgb(240, 193, 165);
+                color:white;
+             }
 
         </style>
     </head>
     <body>
-        <div>
         <h1>Bubble Toggler </h1>
         <p>This is a demo that showcases the 'Customizable Toggle / Switch' plugin in action 😊</p>
-        <img src="./Images/dark-lamp-bulb-d-render-1768499135.jpg"/>
-        <button type="button">On/Off Switch</button>
+        <div class="app_container">
+        
+        <img src="./Images/dark-lamp-bulb-d-render-1768499135.jpg" class="bulb_style"/>
+        <button type="button" class="toggle_btn">On / Off Switch</button>
     </div>
     
     </body>
