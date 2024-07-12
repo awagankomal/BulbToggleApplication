@@ -10,15 +10,16 @@
               
                 flex-direction: row;
                 margin: 0px auto;
-                border: 1px solid burlywood;
+                border: none;
                 border-radius: 3px;
-                width:573px;
+                width:570px;
                 height:400px;
                 
                 
             }
             .bulb_style{
                 height: 300px;
+                width:573px;
                 align-items: center;
                 align-content: center;
                 margin: 0px auto;
@@ -46,9 +47,18 @@
         <p>This is a demo that showcases the 'Customizable Toggle / Switch' plugin in action 😊</p>
         <div class="app_container">
         
-        <img src="./Images/dark-lamp-bulb-d-render-1768499135.jpg" class="bulb_style"/>
-        <button type="button" class="toggle_btn">On / Off Switch</button>
+        <img src="./Images/dark-lamp-bulb-d-render-1768499135.jpg" class="bulb_style" id="bulb_img"/>
+        <button type="button" class="toggle_btn" id="toggle_btn" onclick="bulbSwitchAction()">On / Off Switch</button>
     </div>
+    <script>
+           function bulbSwitchAction(){
+              const bulbElement = document.getElementById('bulb_img');
+              bulbElement.src= bulbElement.src.includes("dark-lamp-bulb-d-render-1768499135.jpg")?
+                  "./Images/glowing-lamp-bulb.jpg": "./Images/dark-lamp-bulb-d-render-1768499135.jpg"
+
+           }
+
+    </script>
     
     </body>
 </html>
